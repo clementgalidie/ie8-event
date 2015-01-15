@@ -21,7 +21,6 @@
 <body>
 	<div id="test"></div>
 	<script>
-		(function () {
 			"use strict";
 
 			// Function to check wether we should use addEventListener or attachEvent.
@@ -35,9 +34,8 @@
 
 			var test = document.getElementById("test");
 			addEvent(test, "click", function () {
-				console.log("test");
+				alert("You've clicked on that <div>!");
 			});
-		}());
 	</script>
 </body>
 </html>
