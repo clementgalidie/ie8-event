@@ -9,3 +9,12 @@ Just call the function named `addEvent` and pass it **three parameters**:
 * `action` which is the action (or function if you prefer) you want to trigger with the event.
 
 That's all!
+
+## Interoperability
+
+| Browsers                        | Versions |                    | 
+|-------------------------------- |:--------:|--------------------|
+| Internet Explorer               | 11       | :white_check_mark: |
+| Internet Explorer               | 10       | :white_check_mark: |
+| Internet Explorer               | 9        | :white_check_mark: |
+| Internet Explorer               | 8        | :x:                |
