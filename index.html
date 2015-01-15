@@ -26,9 +26,9 @@
 
 			// Function to check wether we should use addEventListener or attachEvent.
 			function addEvent (element, event, action) {
-				if (addEventListener) {
+				if (element.addEventListener) {
 					element.addEventListener(event, action);
-				} else {
+				} else if (element.attachEvent) {
 					element.attachEvent("on" + event, action);
 				}
 			}
