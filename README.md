@@ -17,4 +17,4 @@ That's all!
 | Internet Explorer               | 11       | :white_check_mark: |
 | Internet Explorer               | 10       | :white_check_mark: |
 | Internet Explorer               | 9        | :white_check_mark: |
-| Internet Explorer               | 8        | :x:                |
+| Internet Explorer               | 8        | :white_check_mark: |
