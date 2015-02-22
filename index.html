@@ -6,35 +6,44 @@
 	<style>
 		body {margin: 0;}
 
-		#test {
+		.test {
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			width: 12.5em;
-			min-height: 12.5em;
-			margin-top: -6.25em;
-			margin-left: -6.25em;
+			width: 12.5rem;
+			min-height: 12.5rem;
+			margin-top: -6.25rem;
+			margin-left: -6.25rem;
+			line-height: 12.5rem;
+			text-align: center;
+			color: #fff;
 			background-color: #444;
 		}
+
+		.test p {margin: 0;}
+
+		.test:hover {cursor: pointer;}
 	</style>
 </head>
 <body>
-	<div id="test"></div>
+	<div class="test">
+		<p>Click here.</p>
+	</div>
 	<script>
-			"use strict";
+			'use strict';
 
 			// Function to check wether we should use addEventListener or attachEvent.
 			function addEvent (element, event, action) {
 				if (element.addEventListener) {
 					element.addEventListener(event, action);
 				} else if (element.attachEvent) {
-					element.attachEvent("on" + event, action);
+					element.attachEvent('on' + event, action);
 				}
 			}
 
-			var test = document.getElementById("test");
-			addEvent(test, "click", function () {
-				alert("You've clicked on that <div>!");
+			var test = document.querySelector('.test');
+			addEvent(test, 'click', function () {
+				alert('You\'ve clicked on that <div>!');
 			});
 	</script>
 </body>
